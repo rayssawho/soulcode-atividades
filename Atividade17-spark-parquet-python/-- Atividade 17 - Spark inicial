@@ -1,0 +1,30 @@
+-- Atividade 17 - Spark inicial
+
+viagem2 = spark.read.format("csv")\
+ .option("header", "true")\
+ .option("delimiter",";")\
+ .option("inferSchema", "true")\
+ .option("encoding", "ISO-8859-1")\
+ .load(r"D:\Documents\Modo DEV ativado\soulcode\Atividade 17\dados\2021_Viagem.csv"
+
+
+
+
+ dados_df = dados.select(dados["Identificador do processo de viagem"].alias("id_processo"),dados["Situação"].alias("Situacao"),dados["Viagem Urgente"].alias("Viagem_urgente"),dados["Justificativa Urgência Viagem"].alias("Justificativa"),dados["Nome órgão solicitante"].alias("Orgao_solicitante"),dados["Nome"].alias("Solicitante"),dados["Cargo"].alias("Cargo"),dados["Período - Data de início"].alias("Data_inicio"),dados["Período - Data de fim"].alias("Data_fim"),dados["Destinos"].alias("Destinos"),dados["Motivo"].alias("Motivo"),dados["Valor diárias"].alias("Valor_diarias"),dados["Valor passagens"].alias("Valor_passagens"),dados["Valor outros gastos"].alias("Outros_gastos"))
+
+
+
+ df2 = df2.select(df2["Nome Antigo"].alias("NovoNome"),
+df2["NomeAntigo2"].alias("NovoNome2"))
+
+
+
+from pyspark.sql.functions import col
+df_temp.select(*(col(c).cast("float").alias(c) for c in df_temp.columns))
+
+viagemjuntas = viagem1.union(viagem2)
+
+
+viagens = viagemjuntas.withColumn("Identificador do processo de viagem", udf_to_value(viagemjuntas["id_viagem"]))
+
+
