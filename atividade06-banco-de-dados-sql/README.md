@@ -3,18 +3,18 @@ Criação de um banco de dados no MySQL. Comandos SQL - DDL.
 
 ## Proposta
 
-Analisar o DER da clínica BOA SAUDE. /
+Analisar o DER da clínica BOA SAUDE. 
 
-Foi apresentado um modelo relacional /
+Foi apresentado um modelo relacional 
 
 * Paciente(codpac, nome, endereço, telefone) 
 * Medico(crm, nome, endereço, telefone, especialidade) 
 * Convenio(codconv, nome) 
 * Consulta(codconsulta, data, horário, medico, paciente, convenio, porcent) 
 * Atende(medico, convenio) 
-* Possui(paciente, convenio, tipo, vencimento) /
+* Possui(paciente, convenio, tipo, vencimento) 
 
-A seguir foi apresentado um simples dicionário de dados onde é descrito o significado de cada atributo  de cada relação. Defina qual tipo de dado é o ideal para cada atributo. Após, implemente o banco  BOASAUDE no POSTGREESQL, MySQL ou SGBD Equivalente. /
+A seguir foi apresentado um simples dicionário de dados onde é descrito o significado de cada atributo  de cada relação. Defina qual tipo de dado é o ideal para cada atributo. Após, implemente o banco  BOASAUDE no POSTGREESQL, MySQL ou SGBD Equivalente. 
 
 Mais detalhes no arquivo: *descricao_atividade06.pdf*
 
