@@ -25,3 +25,4 @@ Foram meses bem intensos sendo preparada para seguir essa profissão. No bootcam
 As atividades que realizei durante o bootcamp estão separadas por diretórios. Dentro de cada um deles, temos um arquivo README.md que apresenta: o desafio proposto na atividade, as ferramentas utilizadas e os autores. Muitas dessas atividades foram realizadas em equipe, e os devidos créditos dos demais colaboradores estão inclusos nos arquivos README.md.
 
 
+:alien:
